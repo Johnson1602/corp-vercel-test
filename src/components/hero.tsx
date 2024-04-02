@@ -11,11 +11,11 @@ export default function Hero(props: HeroProps) {
   const { imgUrl, imgAlt, title } = props
 
   return (
-    <div className='relative flex justify-center items-center h-screen'>
-      <h1 className='mx-8 text-4xl text-white text-center md:text-2xl'>
+    <div className='relative flex justify-center items-center h-screen -z-10'>
+      <h1 className='mx-8 text-4xl text-white text-center z-10 md:text-2xl'>
         {title}
       </h1>
-      <div className='absolute -z-10 inset-0'>
+      <div className='absolute inset-0'>
         <Image
           src={imgUrl}
           alt={imgAlt}
