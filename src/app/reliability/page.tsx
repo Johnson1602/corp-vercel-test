@@ -1,3 +1,12 @@
+import Hero from '@components/hero'
+import reliabilityImage from '@public/reliability.jpg'
+
 export default function ReliabilityPage() {
-  return <h1>Reliability Page</h1>
+  return (
+    <Hero
+      imgUrl={reliabilityImage}
+      imgAlt='reliability'
+      title='Reliability is our number one priority'
+    />
+  )
 }

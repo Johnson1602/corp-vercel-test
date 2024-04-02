@@ -1,3 +1,12 @@
+import Hero from '@components/hero'
+import performanceImage from '@public/performance.jpg'
+
 export default function PerformancePage() {
-  return <h1>Performance Page</h1>
+  return (
+    <Hero
+      imgUrl={performanceImage}
+      imgAlt='performance'
+      title='Blazing fast performance'
+    />
+  )
 }
